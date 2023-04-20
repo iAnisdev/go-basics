@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func formatString() {
+func FormatString() {
 	var name string = "Adam"
 	var age float32 = 12.50
 
