@@ -7,4 +7,7 @@ func Slice() {
 	fmt.Println(scores, len(scores))
 	scores = append(scores, 2)
 	fmt.Println(scores, len(scores))
+
+	topThree := scores[1:4]
+	fmt.Println(topThree)
 }
