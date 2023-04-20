@@ -8,6 +8,10 @@ func Slice() {
 	scores = append(scores, 2)
 	fmt.Println(scores, len(scores))
 
-	topThree := scores[1:4]
+	topThree := scores[:3]
+	lastFour := scores[4:]
+	between := scores[1:3]
 	fmt.Println(topThree)
+	fmt.Println(lastFour)
+	fmt.Println(between)
 }
