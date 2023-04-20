@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func constants() {
+func Constants() {
 	const name string = "Anis"
 	fmt.Print(name)
 }
