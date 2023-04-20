@@ -6,9 +6,13 @@ import (
 )
 
 var (
-	name   string = "A"
-	age    int    = 21
-	status bool   = false
+/*
+name   string = "A"
+age    int    = 21
+status bool   = false
+size   byte   = 255
+phone  rune   = 03452674175
+*/
 )
 
 func Variables() {
