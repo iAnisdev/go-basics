@@ -12,6 +12,10 @@ type Dish struct {
 	price int
 }
 
+type Printer interface {
+	PrintInfo()
+}
+
 func (b Book) PrintInfo() {
 	fmt.Printf("The Book %v is currently selling at %v$", b.name, b.price)
 }
@@ -31,8 +35,9 @@ func InterfaceTest() {
 		price: 2,
 	}
 
-	rdPd.PrintInfo()
+	info := []Printer{rdPd, rice}
+
+	info[0].PrintInfo()
 	fmt.Println()
-	rice.PrintInfo()
-	fmt.Println()
+	info[1].PrintInfo()
 }
